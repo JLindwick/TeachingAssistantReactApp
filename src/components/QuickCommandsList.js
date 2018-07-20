@@ -21,9 +21,7 @@ class myFormList extends React.Component
           <p>[Button One]&nbsp; : &nbsp;</p>
           <p>Hello [NAME]! Welcome to class</p>
           </div>
-          <div className="buttons">
-            <button onClick={ () => this.handleClick() }>Toggle things</button>
-          </div>
+
       </div>
     )
   }

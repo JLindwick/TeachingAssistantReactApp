@@ -19,6 +19,11 @@ class myForm extends React.Component
             <button type="submit" className="">Third Macro</button>
             <button type="submit" className="">Fourth Macro</button>
             <button type="submit" className="">Fifth Macro</button>
+            </form>
+            <br/>
+            <br/>
+            <form className="ToggleHelp" onSubmit={this.props.toggle}>
+              <button onClick={ () => this.handleClick() }>Toggle things</button>
           </form>
       </div>
 

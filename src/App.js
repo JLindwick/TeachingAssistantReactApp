@@ -99,18 +99,6 @@ class App extends Component
   {
     var layouts = [
     {
-      i: 'a',
-      x: 4,
-      y: 0,
-      w: 4,
-      h: 2
-    },
-    {
-      i: 'b',
-      x: 4,
-      y: 0,
-      w: 4,
-      h: 2
     }];
     return (<div className="App">
       <header className="App-header">
@@ -118,10 +106,10 @@ class App extends Component
       </header>
       <p className="App-intro"></p>
       <ResponsiveGridLayout className="layout" layouts={layouts} draggableCancel="input,textarea">
-        <div key="a">
+        <div key="a" data-grid={{x: 0, y: 0, w: 7, h: 2, static: false}}>
           <ChatComponent inputText={this.state.inputText} handleChatInputChange={this.handleChatInputChange} sendChat={this.sendChat} messages={this.state.messages}/>
         </div>
-        <div key="b">
+        <div key="b" data-grid={{x: 15, y: 20, w: 5, h: 2, static: false}}>
           <QuickCommandsList/>
           <br/>
           <QuickCommands/>
