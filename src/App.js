@@ -103,10 +103,10 @@ class App extends Component
       </header>
       <p className="App-intro"></p>
       <ResponsiveGridLayout className="layout" draggableCancel="input,textarea">
-        <div key="a" data-grid={{x: 0, y: 0, w: 7, h: 2, static: false}}>
+        <div key="a" data-grid={{x: 0, y: 0, w: 7, h: 1}}>
           <ChatComponent inputText={this.state.inputText} handleChatInputChange={this.handleChatInputChange} sendChat={this.sendChat} messages={this.state.messages}/>
         </div>
-        <div key="b" data-grid={{x: 15, y: 20, w: 5, h: 2, static: false}}>
+        <div key="b" data-grid={{x: 15, y: 20, w: 5, h: 2}}>
           <QuickCommandsList/>
           <br/>
           <QuickCommands/>
