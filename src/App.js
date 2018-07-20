@@ -97,15 +97,12 @@ class App extends Component
 
   render()
   {
-    var layouts = [
-    {
-    }];
     return (<div className="App">
       <header className="App-header">
         <h1 className="App-title">Teaching Assistant App</h1>
       </header>
       <p className="App-intro"></p>
-      <ResponsiveGridLayout className="layout" layouts={layouts} draggableCancel="input,textarea">
+      <ResponsiveGridLayout className="layout" draggableCancel="input,textarea">
         <div key="a" data-grid={{x: 0, y: 0, w: 7, h: 2, static: false}}>
           <ChatComponent inputText={this.state.inputText} handleChatInputChange={this.handleChatInputChange} sendChat={this.sendChat} messages={this.state.messages}/>
         </div>
